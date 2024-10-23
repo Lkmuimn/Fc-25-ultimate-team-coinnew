@@ -1,53 +1,47 @@
-
 body {
-
-  width: 356px;
-  height: 690px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-  width: 161px;
-  height: 210px;
-  margin: 0 7px; // Margin left and right
-}
+.container {
+    position: relative;
+    width: 357px;
+    height: 690px;
+    overflow: hidden;
 
-.img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    .background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
 
-// Specific styles for each image
-#img1 {
-  margin-top: 219px;
-  margin-bottom: 244px; // Space above 2img
-}
+    .image {
+        width: 161px;
+        height: 210px;
+        position: absolute;
+        z-index: 2;
 
-#img2 {
-  margin-top: 219px;
-  margin-bottom: 244px; // Space above 4img
-}
+        #img1 {
+            top: 219px;
+            left: 7px;
+        }
 
-#img3 {
-  margin-top: 448px;
-  margin-bottom: 15px; // Space below 3img
-}
+        #img2 {
+            top: 219px;
+            left: calc(161px + 16px + 7px); // 1img width + space + margin
+        }
 
-#img4 {
-  margin-top: 448px;
-  margin-bottom: 15px; // Space below 4img
-}
+        #img3 {
+            top: 448px;
+            left: 7px;
+        }
 
-// Adjust spacing between images
-.img1-2 {
-  margin-bottom: 16px; // Space between img1 and img2
-}
-
-.img3-4 {
-  margin-bottom: 16px; // Space between img3 and img4
+        #img4 {
+            top: 448px;
+            left: calc(161px + 16px + 7px); // 3img width + space + margin
+        }
+    }
 }
