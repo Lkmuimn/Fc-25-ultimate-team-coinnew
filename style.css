@@ -1,47 +1,47 @@
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 0;
 }
 
 .container {
     position: relative;
     width: 357px;
     height: 690px;
+    overflow: hidden;
 }
 
 .background {
-    position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .image {
     width: 161px;
     height: 210px;
-    margin-left: 7px;
-    margin-right: 7px;
+    position: absolute;
+    z-index: 2;
 }
 
-.img1 {
-    margin-top: 219px;
-    margin-bottom: 244px;
+#img1 {
+    top: 219px;
+    left: 7px;
 }
 
-.img2 {
-    margin-top: 219px;
-    margin-bottom: 244px;
+#img2 {
+    top: 219px;
+    left: calc(161px + 16px + 7px); /* 1img width + space + margin */
 }
 
-.img3 {
-    margin-top: 448px;
-    margin-bottom: 15px;
+#img3 {
+    top: 448px;
+    left: 7px;
 }
 
-.img4 {
-    margin-top: 448px;
-    margin-bottom: 15px;
+#img4 {
+    top: 448px;
+    left: calc(161px + 16px + 7px); /* 3img width + space + margin */
 }
