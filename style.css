@@ -5,8 +5,10 @@ body {
 
 .container {
     position: relative;
-    width: 656px;
-    height: 1290px;
+    width: 356px;
+    height: 690px;
+   width:100vh;
+    height:100vh;
     overflow: hidden;
 }
 
