@@ -1,1 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Background-image .jpg');
+    width: 357px;
+    height: 690px;
+}
 
+.container {
+    position: relative;
+    width: 357px;
+    height: 690px;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 161px;
+    height: 210px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.img1 {
+    margin-top: 219px;
+    margin-bottom: 244px;
+}
+
+.img2 {
+    margin-top: 219px;
+    margin-bottom: 244px;
+    clear: both; /* Ensures img2 is below img1 */
+}
+
+.img3 {
+    margin-top: 448px;
+    margin-bottom: 15px;
+    float: left; /* Aligns img3 to the left */
+}
+
+.img4 {
+    margin-top: 448px;
+    margin-bottom: 15px;
+    float: left; /* Aligns img4 next to img3 */
+}
+
+/* Clearfix to contain floated images */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
