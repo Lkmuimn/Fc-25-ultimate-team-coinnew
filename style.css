@@ -4,6 +4,8 @@ body {
     background-image: url('Background-image .jpg');
     width: 357px;
     height: 690px;
+    width:100vh;
+    height:100vh;
 }
 
 .container {
