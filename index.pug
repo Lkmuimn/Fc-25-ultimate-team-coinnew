@@ -3,12 +3,13 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="styles.scss")
-    title Image Layout
-
+    title Centered Images with Blue Background
+    link(rel="stylesheet", href="styles.css")
   body
     .container
-      img.100k.jpg(src="100k.jpg" alt="Image 1")
-      img.50k.jpg(src="50k.jpg" alt="Image 2")
-      img.10k.jpg(src="10k.jpg" alt="Image 3")
-      img.Custom.jpg(src="Custom.jpg" alt="Image 4")
+      .image-box
+        a(href="image1.jpg", target="_blank")
+          img(src="image1.jpg", alt="Image 1", class="center-image")
+      .image-box
+        a(href="image2.jpg", target="_blank")
+          img(src="image2.jpg", alt="Image 2", class="center-image")
