@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    height:700px;
+    width:360px;
+    height: 100vh;
+    background-image: url('background.jpg'); // Replace with your background image
+    background-size: cover; // Cover the entire body
+    background-position: center; // Center the background image
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; // Prevent scrolling
+
+    .container {
+        display: flex;
+        flex-direction: column; // Stack images vertically
+        align-items: center;
+
+        .image-box {
+        margin-top:400px;
+            padding: 5px; // Optional padding around images
+            margin: 5px; // Space between images
+
+            .center-image {
+                width: 100vw;
+                height: 100vh; 
+                margin-left:370px;
+                margin-top:250px;
+            }
+        }
+    }
+}
