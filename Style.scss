@@ -22,10 +22,12 @@ body {
             margin: 5px; // Space between images
 
             .center-image {
-                width: 100vw;
-                height: 100vh; 
-                margin-left:370px;
-                margin-top:250px;
+    width: 35vw; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50vh; /* Limit height to avoid overflow */
+    margin-left:370px;
+    margin-top:250px;
+            }
             }
         }
     }
